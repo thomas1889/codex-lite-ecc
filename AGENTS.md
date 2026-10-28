@@ -22,6 +22,12 @@
 - If a check cannot run, state which one and why.
 - Summarize what changed, why, and the checks performed.
 
+## Continuous learning
+
+- When the user asks to remember a pattern, or a non-trivial correction or workaround is likely to recur, use the `continuous-learning` skill to draft one reusable lesson.
+- Save a learning only after the user approves the exact draft. Use `.agents/skills/learned/` for project scope; use `~/.agents/skills/learned/` only when the user requests a global learning.
+- Do not store transcripts, credentials, personal or customer data, private conversation details, or one-off fixes. The learning hook is a review prompt, not permission to write.
+
 ## Boundaries
 
 - Ask before destructive actions, external publication, deployment, or changes to third-party resources unless the user has already authorized that exact action.

@@ -1,0 +1,41 @@
+{
+  "description": "Local-only continuous-learning nudge. It stores a per-session prompt count and never stores prompt or transcript contents.",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/scripts/hooks/continuous_learning.py\"",
+            "commandWindows": "python \"${PLUGIN_ROOT}\\scripts\\hooks\\continuous_learning.py\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/scripts/hooks/continuous_learning.py\"",
+            "commandWindows": "python \"${PLUGIN_ROOT}\\scripts\\hooks\\continuous_learning.py\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/scripts/hooks/continuous_learning.py\"",
+            "commandWindows": "python \"${PLUGIN_ROOT}\\scripts\\hooks\\continuous_learning.py\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ]
+  }
+}

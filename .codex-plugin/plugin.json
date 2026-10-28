@@ -1,6 +1,6 @@
 {
   "name": "codex-lite",
-  "version": "0.1.0",
-  "description": "A lightweight Codex workflow kit for planning, implementing, reviewing, and verifying code changes.",
+  "version": "0.2.0",
+  "description": "A lightweight Codex workflow kit for planning, implementing, reviewing, verifying, and learning from code changes.",
   "skills": "./skills/"
 }
